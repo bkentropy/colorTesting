@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>HTML5 Color Picker Demonstrated</title>
+  <script language="javascript">
+  function newBackgroundColor(color)
+  {
+     document.bgColor = color;
+     document.colorForm.selectedcolor.value = color;
+  }
+  </script>
+</head>
+<body bgcolor="white">
+<header>
+  <h1>HTML 5 Color Picker Demonstrated</h1>
+</header>
+<form name="colorForm">
+   <p>Select Background Color
+   <input name="colorpicker" type="color" onchange="newBackgroundColor(colorpicker.value);">
+   </p>
+   <p>
+   Selected Color
+   <input name="selectedcolor" type="text">
+   </p>
+</form>
+
+<script>
+        function newTopNavColor(color) {
+            document.colorForm1.selectedcolor.value = color;
+        }
+		function newLeftNavColor(color) {
+            document.colorForm2.selectedcolor.value = color;
+		}
+        function newBackgroundColor(color) {
+            document.bgColor = color;
+            document.colorForm3.selectedcolor.value = color;
+        }
+	</script>
+	
+	<div class="panel-body">
+		<form name="colorForm1">
+			<p>Select Top Nav Bar Color
+				<input name="colorpicker" type="color" onchange="newTopNavColor(colorpicker.value);">
+				Selected Color
+			<input name="selectedcolor" type="text">
+		</form>
+	</div>
+
+    <div class="panel-body">
+        <form name="colorForm2">
+            <p>Select Left Nav Bar Color
+                <input name="colorpicker" type="color" onchange="newLeftNavColor(colorpicker.value);">
+            	Selected Color
+            <input name="selectedcolor" type="text">
+            </p>
+        </form>
+    </div>
+
+	<div class="panel-body">
+		<form name="colorForm3">
+			<p>Select Background Color
+				<input name="colorpicker" type="color" onchange="newBackgroundColor(colorpicker.value);">
+					sSelected Color
+			<input name="selectedcolor" type="text">
+			</p>
+		</form>
+	</div>
